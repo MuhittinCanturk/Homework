@@ -1,0 +1,49 @@
+/* 
+    Morning = 1
+    Afternon = 2
+    Night = 3
+    */
+    int Time = 2;
+    /*
+    1.Class = 1
+    2.Class = 2
+     */
+    int Class = 1;
+    int Passanger = 5;
+    int Price;
+
+    if (Class == 1) 
+    {
+        if (Time == 1)
+        {
+            Price = (150 * Passanger);
+        }
+        else if (Time == 2)
+        {
+            Price = (140 * Passanger);
+        }
+        else
+        {
+            Price = (120 * Passanger);
+        }
+    }
+    else
+    {
+        if(Time == 1)
+        {
+            Price = 100 * Passanger;
+        }
+        else if(Time == 2)
+        {
+            Price = 90 * Passanger;
+        }
+        else
+        {
+            Price = 70 * Passanger;
+        }
+    }
+    if (Passanger > 2)
+    {
+        Price = (Price * 85 / 100);
+    }
+    print("Price: " + Price);
